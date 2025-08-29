@@ -221,8 +221,6 @@ end)
 
 do
     local Workspace, RunService, Players, CoreGui = Services.Workspace, Services.RunService, Services.Players, Services.CoreGui
-
-    local Euphoria = Config.ESP.Connections;
     local lplayer = Players.LocalPlayer;
     local Cam = Workspace.CurrentCamera;
     local RotationAngle, Tick = -45, tick();
