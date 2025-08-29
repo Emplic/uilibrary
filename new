@@ -77,6 +77,32 @@ local Services = setmetatable({}, {
     end)
 })
 
+
+do 
+    Players = Services.Players;
+    ReplicatedStorage = Services.ReplicatedStorage;
+    UserInputService = Services.UserInputService;
+    Workspace = Services.Workspace;
+    RunService = Services.RunService;
+    ProximityPromptService = Services.ProximityPromptService;
+    MarketplaceService = Services.MarketplaceService;
+    StarterGui = Services.StarterGui
+    VirtualInputManager = Services.VirtualInputManager;
+    Lighting = Services.Lighting
+    mathrandom = math.random;
+    mathabs = math.abs;
+    Mobile = UserInputService.TouchEnabled
+
+    Cars = {}
+
+    Camera = Workspace.CurrentCamera
+
+    LocalPlayer = Players.LocalPlayer
+    Mouse = LocalPlayer:GetMouse()
+
+    Move_Mouse_Function = mousemoverel
+end;
+
 getgenv().library = {
     directory = "nobulem.wtf_remastered",
     folders = {
@@ -196,7 +222,6 @@ end)
 do
     local Workspace, RunService, Players, CoreGui = Services.Workspace, Services.RunService, Services.Players, Services.CoreGui
 
-    -- Def & Vars
     local Euphoria = Config.ESP.Connections;
     local lplayer = Players.LocalPlayer;
     local Cam = Workspace.CurrentCamera;
